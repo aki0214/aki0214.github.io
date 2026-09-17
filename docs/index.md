@@ -1,3 +1,3 @@
 # My Technical Cheat Sheet
 
-Bash, Python, NumPy, pandas, Matplotlib, R tidyverseなどの個人的なメモ。
+Bash, Python全般, NumPy, pandas, Matplotlib, R tidyverseなどの個人的なメモ。
