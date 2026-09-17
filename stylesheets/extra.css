@@ -1,0 +1,39 @@
+:root {
+  --md-sidebar-width: 18rem;
+  --md-sidebar-min-width: 12rem;
+  --md-sidebar-max-width: 32rem;
+}
+
+.md-sidebar--primary {
+  width: var(--md-sidebar-width);
+  min-width: var(--md-sidebar-min-width);
+  max-width: var(--md-sidebar-max-width);
+  flex: 0 0 var(--md-sidebar-width);
+  transition: width 0.12s ease, flex-basis 0.12s ease;
+  position: relative;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  overflow: auto;
+}
+
+.md-sidebar-drag-handle {
+  position: absolute;
+  top: 0;
+  right: -6px;
+  width: 12px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 20;
+}
+
+body[data-sidebar-dragging="true"] {
+  user-select: none;
+  cursor: col-resize;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary {
+    flex-basis: var(--md-sidebar-width);
+  }
+}
