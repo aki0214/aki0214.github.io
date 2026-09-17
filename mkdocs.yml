@@ -35,11 +35,11 @@ markdown_extensions:
       permalink: true
       toc_depth: 2
 
-extra_css:
-  - stylesheets/extra.css
+# extra_css:
+#   - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/resize-sidebar.js
+# extra_javascript:
+#   - javascripts/resize-sidebar.js
 
 nav:
   - Home: index.md
