@@ -4,3 +4,4 @@
 
 ```python
 df.groupby("category")["value"].mean()
+```

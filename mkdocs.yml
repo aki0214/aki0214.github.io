@@ -7,6 +7,9 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -30,6 +33,13 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      toc_depth: 2
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/resize-sidebar.js
 
 nav:
   - Home: index.md
