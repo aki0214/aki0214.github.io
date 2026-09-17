@@ -1,0 +1,62 @@
+site_name: My Technical Cheat Sheet
+
+theme:
+  name: material
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+
+  - Bash:
+      - Overview: bash/index.md
+      - ファイル操作: bash/file.md
+      - テキスト処理: bash/text.md
+
+  - Python:
+      - Overview: python/index.md
+      - 基本文法: python/basic.md
+
+  - NumPy:
+      - Overview: numpy/index.md
+
+  - pandas:
+      - Overview: pandas/index.md
+      - DataFrame操作: pandas/dataframe.md
+      - 抽出・選択: pandas/selection.md
+      - groupby: pandas/groupby.md
+
+  - Matplotlib:
+      - Overview: matplotlib/index.md
+
+  - R / tidyverse:
+      - Overview: r/index.md
+      - dplyr: r/dplyr.md
+      - tidyr: r/tidyr.md
+      - ggplot2: r/ggplot2.md
